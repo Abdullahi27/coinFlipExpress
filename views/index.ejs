@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> COIN FLIP GAME! </title>
+  <link rel="stylesheet" href="normalize.css"> 
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  
+	<h1>COIN FLIP GAME!</h1>
+    
+    <button id="heads" value="heads" type="button" name="button">Heads</button>
+
+    <button id="tails" value="tails" type="button" name="button">Tails</button>
+
+    <p id="result">
+  
+      <% for(var i=0; i<coinflip.length; i++) {%>
+        <span>
+          <%= coinflip[i].result %>
+        </span>
+
+        <button id="deletebtn" data-id="<%= coinflip[i].id %>">Delete</button>  
+        <br>      
+      <% } %>
+        
+    </p>
+
+    
+    
+
+<script src="main.js"></script>
+</body>
+</html>

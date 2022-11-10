@@ -1,0 +1,30 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+#score {
+  
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+  text-align: center;
+  background-color: #0A338F;
+}
+
+h1 {
+  color: white
+}
