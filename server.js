@@ -52,11 +52,11 @@ app.post('/coinflip', (req, res) => {
     if (req.body.userChoice === randomToss) {
         result = 'You guessed right!'
     } else {
-      result = 'You guessed wrongt!'
+      result = 'You guessed wrong!'
     }
 
 
-  db.collection('coinflip').save({result: result, id: new ObjectId()}, (err, result) => {
+  db.collection('coinflip').save({result: result, id: new ObjectId(), randomToss: randomToss}, (err, result) => {
     if (err) return console.log(err)
     console.log('saved to database')
     res.redirect('/index.ejs')

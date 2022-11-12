@@ -15,7 +15,17 @@
     <button id="tails" value="tails" type="button" name="button">Tails</button>
 
     <p id="result">
-  
+
+      <% if(coinflip.length > 0) {%>
+        <h1>
+          Result: 
+          <%= coinflip[coinflip.length-1].result %>
+          <br>
+          It was 
+          <%= coinflip[coinflip.length-1].randomToss %>
+        </h1>
+        <% } %>
+      
       <% for(var i=0; i<coinflip.length; i++) {%>
         <span>
           <%= coinflip[i].result %>
