@@ -1,13 +1,5 @@
-# ♠️ Bootcamp2019a Project: Matching Card Game w/Express
+## Flip a Coin
 
+<img width="582" alt="coinFLipEx" src="https://user-images.githubusercontent.com/111465917/201547380-66445e2a-fb89-4f65-a24d-bc7296f715ef.png">
 
-
-## Link to project 
-
-<a href="https://fifa22matching.netlify.app" rel="nofollow"><img src="fifa.gif" alt=""></a>
-
-<a href="https://fifa22matching.netlify.app" rel="nofollow">Visit Website</a>
-
-
-
-### Goal: Updated my matching card game to run with Express 
+This website allows you to flip a coin with a random flip generator. 
